@@ -1,9 +1,9 @@
-import mochaOvercoat from "@public/mochaOvercoat.jpg";
-import dreamGown from "@public/dreamGown.jpg";
-import rainJacket from "@public/rainJacket.jpg";
-import merlotSuit from "@public/merlotSuit.jpg";
-import moonlightDress from "@public/moonlightDress.jpg";
-import denimPioneer from "@public/denimPioneer.jpg";
+import mochaOvercoat from "@public/mocha-overcoat.jpg";
+import dreamGown from "@public/dream-gown.jpg";
+import rainJacket from "@public/rain-jacket.jpg";
+import merlotSuit from "@public/merlot-suit.jpg";
+import moonlightDress from "@public/moonlight-dress.jpg";
+import denimPioneer from "@public/denim-pioneer.jpg";
 
 export const dBase = [
     {

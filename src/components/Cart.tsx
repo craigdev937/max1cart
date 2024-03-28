@@ -1,10 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { CartItems } from "./CartItems";
-
-type CAR = {
-    onClose: () => void;
-};
+import { CAR } from "../models/Interfaces";
 
 export const Cart = ({ onClose }: CAR) => {
     return ReactDOM.createPortal (
