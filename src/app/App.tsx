@@ -1,14 +1,11 @@
 import React from "react";
 import "./App.css";
-import Ravens from "@public/Ravens.webp";
+import { Main } from "../containers/Main";
 
 export const App = () => {
     return (
         <React.Fragment>
-            <img
-                alt="Baltimore Ravens" src={Ravens}  
-                height="500px" width="auto"
-            />
+            <Main />
         </React.Fragment>
     );
 };
