@@ -1,10 +1,15 @@
 import React from "react";
 import { PRO } from "../models/Interfaces";
+import { useAppDispatch } from "../global/Hooks";
+import { addToCart } from "../global/CartSlice";
 
 export const Product = ({ 
-    image, title, price, description 
+    id, image, title, price, description 
 }: PRO) => {
-    function handleAddToCart() {};
+    const dispatch = useAppDispatch();
+    function handleAddToCart() {
+        dispatch(addToCart({ id, title, price }));
+    };
 
     return (
         <React.Fragment>

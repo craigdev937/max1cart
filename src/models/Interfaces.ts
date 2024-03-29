@@ -14,10 +14,13 @@ export interface PRO {
     description: string
 };
 
-export interface ICart {
+export interface IData {
     id: string,
     title: string,
     price: number,
+};
+
+export interface ICart extends IData {
     quantity: number
 };
 

@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { ICart, ICartState } from "../models/Interfaces";
+import { IData, ICartState } from "../models/Interfaces";
 
 const initialState: ICartState = {
     items: []
@@ -10,7 +10,7 @@ const CartSlice = createSlice({
     initialState: initialState,
     reducers: {
         addToCart: (
-            state, action: PayloadAction<ICart>
+            state, action: PayloadAction<IData>
         ) => {
             const itemIndex = state.items.findIndex(
                 (item) => item.id === action.payload.id);
