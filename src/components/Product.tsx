@@ -1,11 +1,11 @@
 import React from "react";
-import { PRO } from "../models/Interfaces";
+import { IPro } from "../models/Interfaces";
 import { useAppDispatch } from "../global/Hooks";
 import { addToCart } from "../global/CartSlice";
 
 export const Product = ({ 
     id, image, title, price, description 
-}: PRO) => {
+}: IPro) => {
     const dispatch = useAppDispatch();
     function handleAddToCart() {
         dispatch(addToCart({ id, title, price }));
