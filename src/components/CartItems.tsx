@@ -51,12 +51,10 @@ export const CartItems = () => {
                             </li>
                         );
                     })}
+                    <p id="cart-total-price">
+                        Cart Total: <strong>${formattedTotalPrice}</strong>
+                    </p>
                 </ul>
-                
-
-                <p id="cart-total-price">
-                    Cart Total: <strong>${formattedTotalPrice}</strong>
-                </p>
             </main>
         </React.Fragment>
     );
